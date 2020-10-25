@@ -1,0 +1,44 @@
+@import "config";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap");
+@import "../components/Layout/style";
+@import "../components/Layout/Header/style";
+@import "../components/Layout/Footer/style";
+
+body {
+  background: #f8f8f8;
+  color: set-text-color($white-color);
+  height: 100vh;
+  font-family: "Domine", serif;
+  line-height: 1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Josefin Sans", sans-serif;
+  color: $secondary-color;
+}
+
+a {
+  color: $white-color;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+}
+
+footer {
+  width: 100%;
+  min-height: 175px;
+  font-size: 0.75rem;
+  bottom: 0.4rem;
+  text-align: center;
+  padding: 1rem;
+  color: #aaa;
+}

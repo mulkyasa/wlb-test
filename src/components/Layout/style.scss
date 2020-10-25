@@ -1,0 +1,17 @@
+.sb-site {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  height: 330px;
+  background-color: $primary-color;
+}
+
+.card {
+  margin: 180px auto 40px;
+  background: $white-color;
+  min-height: 100vw;
+  max-width: 90%;
+  text-align: center;
+  padding: 100px 0;
+}

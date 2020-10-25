@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 80px;
+  position: fixed;
+  padding: 0 1rem;
+  align-items: center;
+  background: $primary-color;
+  top: 0;
+  left: 0;
+  width: 100vw;
+
+  .brand-nav {
+    font-size: 1.725rem;
+    font-weight: 600;
+  }
+
+  .menu-nav {
+    display: flex;
+    text-align: right;
+    list-style-type: none;
+
+    &__link {
+      display: inline-block;
+      font-size: 0.745rem;
+      text-transform: uppercase;
+      padding: 0.725rem;
+
+      &:hover {
+        background: rgba($white-color, 0.1);
+      }
+    }
+  }
+}
