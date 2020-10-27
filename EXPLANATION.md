@@ -1,0 +1,3 @@
+# Blog App
+
+Here I will explain the reason why I made this blog design. First thing when I got the assignment to create a blog, is what theme that I will choose for this blog. Then after a while I see the condition of my nation, there are demos everywhere, many people argue each other. So, I think we have to unite the nation to recover the disappointment. Therefore this blog is present, with a simple design with primary color is red and white just like the country flag of Indonesia. This design is a typography design, with considering in selecting and arranging letters with arrangement of their spread in the available spaces, to create a certain impression, so as to help readers to get as much reading comfort as possible.
