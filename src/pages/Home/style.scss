@@ -120,4 +120,18 @@
       @include transition-ease;
     }
   }
+
+  @include media-sm {
+    .post__date {
+      display: none;
+    }
+
+    .post__wrapper {
+      padding-left: 0;
+
+      &::before {
+        content: none;
+      }
+    }
+  }
 }
