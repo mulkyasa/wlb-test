@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import "./scss/style.scss";
 import Layout from "./components/Layout";
-import { Home, Posts, NewPost } from "./pages";
+import routes from "./routes";
 
 const renderWithLayout = (Component, props) => {
   return (
@@ -17,9 +17,16 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" render={(props) => renderWithLayout(Home, props)} />
-        <Route path="/posts" render={(props) => renderWithLayout(Posts, props)} />
-        <Route path="/new-post" render={(props) => renderWithLayout(NewPost, props)} />
+        {routes.map((route, idx) => {
+          return (
+            <Route
+              key={idx}
+              exact={route.exact}
+              path={route.path}
+              render={(props) => renderWithLayout(route.component, props)}
+            />
+          );
+        })}
       </Switch>
     </Router>
   );

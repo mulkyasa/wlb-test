@@ -1,0 +1,123 @@
+.page-title {
+  position: relative;
+  text-transform: uppercase;
+  height: 52px;
+  width: 100%;
+  text-align: center;
+  margin: 0 0 70px;
+  padding-bottom: 30px;
+
+  & h4::after {
+    content: "";
+    position: absolute;
+    color: #b7b7b7;
+    bottom: 0;
+    height: 1px;
+    width: 50px;
+  }
+}
+
+.post {
+  padding-bottom: 100px;
+  margin-bottom: 90px;
+
+  &__date {
+    position: absolute;
+    text-align: center;
+    width: 75px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      display: block;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background-color: $primary-color;
+      top: 17px;
+      left: 94px;
+    }
+  }
+
+  &__date-day {
+    display: block;
+    font-family: "Domine", serif;
+    font-size: 60px;
+    color: $primary-color;
+  }
+
+  &__date-month {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  &__date-year {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  &__wrapper {
+    position: relative;
+    padding-left: 140px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 1px;
+      left: 99px;
+      background: rgba(68,68,68,0.1);
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 35px;
+    margin: 0 0 8px;
+    line-height: 1.2;
+
+    &-text {
+      color: $secondary-color;
+
+      &:hover {
+        color: $primary-color;
+        @include transition-ease;
+      }
+    }
+  }
+
+  &__info {
+    font-size: 11px;
+    margin: 12px 0 24px 0;
+    color: #888;
+  }
+
+  &__article {
+    margin-bottom: 10px;
+  }
+
+  &__button {
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: $primary-color;
+    color: white;
+    height: 35px;
+    min-width: 126px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 11px;
+    border-radius: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 30px;
+    border: solid 1px #af2b34;
+
+    &:hover {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      @include transition-ease;
+    }
+  }
+}

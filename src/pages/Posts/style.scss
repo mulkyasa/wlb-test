@@ -1,0 +1,20 @@
+.actions {
+  display: flex;
+  justify-content: center;
+
+  &__btn {
+    outline: none;
+    background: transparent;
+    border: 0;
+    height: 2.6rem;
+    width: 2.6rem;
+    cursor: pointer;
+    margin: 8px;
+
+    &:hover {
+      background-color: $primary-color;
+      color: #fff;
+      @include transition-ease;
+    }
+  }
+}

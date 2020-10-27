@@ -2,7 +2,7 @@ $primary-color: #c63741;
 $secondary-color: #333;
 $white-color: #fff;
 
-* {
+*, ::after, ::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;

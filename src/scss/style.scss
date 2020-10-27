@@ -1,15 +1,23 @@
 @import "config";
+@import "loading";
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap");
+@import "../pages/Home/style";
+@import "../pages/Posts/style";
+@import "../pages/CreatePost/style";
 @import "../components/Layout/style";
 @import "../components/Layout/Header/style";
 @import "../components/Layout/Footer/style";
+@import "../components/Modal/style";
+@import "../components/DataTable/style";
+@import "../components/Pagination/style";
 
 body {
   background: #f8f8f8;
-  color: set-text-color($white-color);
+  color: $secondary-color;
   height: 100vh;
   font-family: "Domine", serif;
-  line-height: 1;
+  line-height: 30px;
 }
 
 h1,

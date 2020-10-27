@@ -7,11 +7,15 @@
   background-color: $primary-color;
 }
 
-.card {
+.container {
   margin: 180px auto 40px;
   background: $white-color;
-  min-height: 100vw;
+  // min-height: 100vw;
   max-width: 90%;
-  text-align: center;
-  padding: 100px 0;
+
+  &__wrapper {
+    width: 77%;
+    padding: 100px 0;
+    margin: 0 auto;
+  }
 }

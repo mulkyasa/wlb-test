@@ -29,6 +29,7 @@
 
       &:hover {
         background: rgba($white-color, 0.1);
+        @include transition-ease;
       }
     }
   }

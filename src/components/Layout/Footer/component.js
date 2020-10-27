@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function component() {
+export default function Component() {
   return (
     <footer>
       <div className="social-icons">

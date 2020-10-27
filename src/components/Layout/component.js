@@ -9,7 +9,7 @@ const propTypes = {
 
 const defaultProps = {};
 
-export default function component(props) {
+export default function Component(props) {
   const { children } = props;
 
   return (
@@ -17,11 +17,13 @@ export default function component(props) {
       <Header />
       <div className="sb-site"></div>
 
-      <div className="card">{children}</div>
+      <div className="container">
+        <div className="container__wrapper">{children}</div>
+      </div>
       <Footer />
     </div>
   );
 }
 
-component.propTypes = propTypes;
-component.defaultProps = defaultProps;
+Component.propTypes = propTypes;
+Component.defaultProps = defaultProps;

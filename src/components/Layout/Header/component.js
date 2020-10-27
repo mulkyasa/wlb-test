@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import routes from "../../../routes";
 
-export default function component() {
+export default function Component() {
   return (
     <header>
       <div className="menu-btn">
@@ -8,23 +10,21 @@ export default function component() {
       </div>
 
       <nav className="nav">
-        <a href="/" className="brand-nav">Typography</a>
+        <Link to="/" className="brand-nav">
+          Blog
+        </Link>
         <ul className="menu-nav">
-          <li className="menu-nav__item active">
-            <a href="/" className="menu-nav__link">
-              Home
-            </a>
-          </li>
-          <li className="menu-nav__item">
-            <a href="/posts" className="menu-nav__link">
-              Posts
-            </a>
-          </li>
-          <li className="menu-nav__item">
-            <a href="/new-post" className="menu-nav__link">
-              New post
-            </a>
-          </li>
+          {routes.map((item, idx) => {
+            return (
+              item.name && (
+                <li key={idx} className="menu-nav__item">
+                  <Link to={item.path} className="menu-nav__link">
+                    {item.name}
+                  </Link>
+                </li>
+              )
+            );
+          })}
         </ul>
       </nav>
     </header>
